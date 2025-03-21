@@ -1,0 +1,155 @@
+.workout-program {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+  height: fit-content;
+
+}
+
+.program-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.program-header h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.program-filters button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.program-filters button:hover {
+  background-color: #0056b3;
+}
+
+.program-content {
+  display: flex;
+}
+
+.sidebar {
+  width: 20%;
+  padding: 15px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-right: 20px;
+}
+
+.sidebar .search-bar input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.filter-section h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.filter-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.filter-section ul div {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  width: 80%;
+}
+
+.program-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+  transform: scale(1.05);
+}
+
+.program-thumbnail {
+  background-color: #eaeaea;
+  height: 150px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.program-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.program-title {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.program-description {
+  font-size: 14px;
+  color: #666;
+}
+
+.program-info {
+  font-size: 12px;
+  color: #999;
+}
+
+.program-pricing {
+  margin: 10px 0;
+}
+
+.program-pricing .price {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+.program-pricing .original-price {
+  font-size: 14px;
+  color: #999;
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+
+.add-to-bag-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-to-bag-btn:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,277 @@
+/* General Styles */
+.whole{
+  margin: 0;
+  padding: 0;
+}
+
+.home-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background: linear-gradient(to right, #45c7eb, #3b9eab);
+    color: white;
+    height: 90vh;
+  }
+  
+  .content {
+    flex: 1 1 400px;
+    padding: 20px;
+    scrollbar-width: none;
+    margin-bottom: 20%;
+  }
+  
+  .content h1 {
+    font-size: 2.5rem;
+    position: relative;
+    top: 10%;
+  }
+  
+  .details {
+    display: flex;
+    align-items: center;
+   
+  }
+  
+  .name {
+    text-align: center;
+  }
+  
+  .name span {
+    font-size: 1.5rem;
+  }
+  
+  .free-days {
+    padding: 5px 10px;
+    background-color: #00c853;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+  
+  .timer {
+    display: flex;
+    gap: 15px;
+    position: relative;
+    top: -15%;
+  }
+  
+  .timer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+  
+  .timer span:first-child {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .content p {
+    font-size: 1rem;
+    position: relative;
+    top: -10%;
+  }
+  
+  .join-now {
+   width: 150px;
+   height: 50px;
+    background-color: white;
+    color: #3b9eab;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 5%;
+  
+  }
+  
+  .join-now:hover {
+    background-color: #00c853;
+    color: white;
+  }
+
+
+  .image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -10%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+    width: 30%;
+  }
+  
+  .circle-images {
+    position: relative;
+    width: 300px; /* Diameter of the circular motion */
+    height: 300px;
+    animation: rotate-circle 10s linear infinite; /* Smooth circle rotation */
+  }
+  
+  .circle-images img {
+    position: absolute;
+    width: 60px; /* Image size */
+    height: 60px;
+    border-radius: 50%; /* Make images circular */
+    object-fit: cover; /* Ensures proper scaling of images */
+    animation: spin-image 2s ease-in-out infinite; /* Subtle zoom effect */
+  }
+  
+ /* Center container for the circle of images */
+.circle-images {
+  position: relative;
+  width: 300px; /* Diameter of the circle */
+  height: 300px; /* Diameter of the circle */
+  margin: 0 auto;
+  animation: rotate-circle 10s linear infinite; /* Rotate the circle */
+}
+
+/* Style for individual images */
+.circle-images img {
+  position: absolute;
+  width: 50px; /* Diameter of the individual image */
+  height: 50px;
+  border-radius: 50%; /* Make images circular */
+  animation: spin-image 3s ease-in-out infinite; /* Smooth zooming effect */
+}
+
+/* Dynamically position each image along the perfect circle */
+.circle-images img:nth-child(1) {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.circle-images img:nth-child(2) {
+  top: 25%;
+  left: 87%;
+  transform: translate(-50%, -50%);
+}
+.circle-images img:nth-child(3) {
+  top: 75%;
+  left: 87%;
+  transform: translate(-50%, -50%);
+}
+.circle-images img:nth-child(4) {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.circle-images img:nth-child(5) {
+  top: 75%;
+  left: 13%;
+  transform: translate(-50%, -50%);
+}
+.circle-images img:nth-child(6) {
+  top: 25%;
+  left: 13%;
+  transform: translate(-50%, -50%);
+}
+
+/* Rotate the entire circle smoothly */
+@keyframes rotate-circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Smooth zooming effect on individual images */
+@keyframes spin-image {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+  /* Responsive Design */
+  @media (max-width:860px) {
+    .image-section {
+      opacity: 0;
+    }    
+  }
+  @media (max-width: 768px) {
+    
+  
+    .circle-images {
+      width: 250px;
+      height: 250px;
+    }
+  
+    .circle-images img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .image-section {
+      height: 200px;
+    }
+  
+    .circle-images {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .circle-images img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  
+  
+
+/* Utility Classes */
+.fade-in {
+  animation: fadeIn 2s ease-in;
+}
+
+.slide-up {
+  animation: slideUp 1s ease-in-out;
+}
+
+.zoom-in {
+  animation: zoomIn 0.5s ease-in-out;
+}
+
+.chatbot-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.chatbot-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}

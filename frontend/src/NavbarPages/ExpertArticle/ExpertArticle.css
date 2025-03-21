@@ -1,0 +1,62 @@
+/* ExpertArticle.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.expert-articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 25px;
+  gap: 5px; /* Space between cards */
+}
+
+.article-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 5px;
+  width: 350px; /* Default width for cards */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s; /* Animation for hover effect */
+}
+
+.article-card:hover {
+  transform: scale(1.05); /* Slightly enlarge card on hover */
+}
+
+.article-card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.article-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.article-card li {
+  margin: 5px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .article-card {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .article-card {
+    width: 100%; /* Full width on very small screens */
+  }
+
+  .article-card h2 {
+    font-size: 1.2em; /* Smaller title font size */
+  }
+}

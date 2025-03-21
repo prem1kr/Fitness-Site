@@ -1,0 +1,71 @@
+.tutorial-page {
+    background: #e3f2fd;
+    padding: 20px;
+    text-align: center;
+    animation: zoomIn 1s ease-in-out;
+  }
+  
+  .tutorial-title {
+    font-size: 2.5rem;
+    color: #0d47a1;
+    margin-bottom: 20px;
+  }
+  
+  .tutorial-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .tutorial-card {
+    background: #ffffff;
+    border-radius: 8px;
+    width: 300px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    animation: fadeSlideIn 1.5s ease-out;
+    transition: transform 0.3s;
+  }
+  
+  .tutorial-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .tutorial-heading {
+    font-size: 1.5rem;
+    color: #1565c0;
+  }
+  
+  .tutorial-duration {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .tutorial-description {
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  @keyframes zoomIn {
+    from {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeSlideIn {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

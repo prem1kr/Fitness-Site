@@ -1,0 +1,88 @@
+/* General Container Styles */
+.pilot-programs-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .filter-controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .filter-controls p {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .sort-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .sort-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Card Styles */
+  .program-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .program-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .program-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .program-card p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .duration {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .price {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .add-to-bag-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .add-to-bag-btn:hover {
+    background-color: #0056b3;
+  }
+  

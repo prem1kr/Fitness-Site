@@ -1,0 +1,38 @@
+.checkout-page {
+    padding: 20px;
+    text-align: center;
+    background: #c2c2c2;
+  }
+  
+  .checkout-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    margin: auto;
+  }
+  
+  .checkout-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .place-order-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .place-order-btn:hover {
+    background: #0056b3;
+  }
+  

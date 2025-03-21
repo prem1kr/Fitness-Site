@@ -1,0 +1,102 @@
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+.plan:hover {
+  color: #3498db;
+  transform: scale(1.05); /* Scale up on hover */
+  background-color:rgb(255, 249, 243);
+}
+
+.hovered {
+  transform: scale(1.05); /* Apply scale effect when isHovered is true */
+}
+
+/* ... other CSS styles ... */
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.daily-button,
+.yearly-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.daily-button {
+  background-color: #f0f0f0;
+}
+
+.yearly-button {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.plans {
+  display: flex;
+  flex-wrap: wrap; /* Allow plans to wrap to multiple lines on smaller screens */
+  justify-content: center; /* Center plans horizontally */
+}
+
+.plan {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+  width: calc(50% - 20px); /* Calculate width for two columns */
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out; /* Add transition for hover effect */
+
+}
+
+@media (max-width: 768px) {
+  /* Adjust plan width for smaller screens (e.g., tablets) */
+  .plan {
+    width: calc(100% - 20px); /* Make plans full width on smaller screens */
+  }
+}
+
+.book-now-button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.book-now-button:hover{
+  background-color: rgb(151, 170, 238);
+}
+
+.testimonials {
+  margin-top: 40px;
+}
+
+.developer-avatars {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow avatars to wrap to multiple lines */
+  margin-bottom: 20px;
+}
+
+.developer-avatars img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}

@@ -1,0 +1,131 @@
+/* Resetting margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Container for the login section */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Animated background */
+  .animated-background {
+   
+    width: 100%;
+    height: 100%;
+    display: flex;
+  justify-content: center;
+    
+  }
+  .background{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  
+  }
+.videos{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+
+  
+  
+
+  
+  /* Styling the login form */
+  .login-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+  }
+  
+  .login-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .forgot-section {
+    margin-top: 10px;
+
+  }
+  
+  .forgot-section a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #007bff;
+  }
+  
+  .forgot-section a:hover {
+    text-decoration: underline;
+    color: red;
+  }
+  
+  /* Styling the login button */
+  .login-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #ff7e5f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .login-btn:hover {
+    background-color: #feb47b;
+  }
+  .btn1{
+    margin-top: 15px;
+  }
+  .btn1 span{
+    color: blue;
+    cursor: pointer;
+  }
+  .btn1 span:hover{
+    color: red;
+    text-decoration: underline;
+  }
+  .error{
+    font-size: 10px;
+    color: #ccc;
+  }

@@ -1,0 +1,121 @@
+
+
+.layout {
+  display: flex;
+  font-family: Arial, sans-serif;
+  height: fit-content;
+}
+.card-image{
+  border-radius: 10px;
+  max-width: 70%;
+  min-width: 60%;
+}
+
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  width: 30%;
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0; /* Ensures the sidebar stays fixed during scrolling */
+  height: 100vh; /* Full height for the sidebar */
+}
+
+.sidebar-item {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sidebar-item:hover {
+  background-color: #bbb;
+}
+
+/* Content styles */
+.content {
+  width: 30%;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  overflow-y: scroll;
+}
+
+.card {
+  flex: 1 1 calc(45% - 20px); /* Adjusts card size to fit nicely */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.right{
+  text-align: center;
+}
+.card h3 {
+  font-size: 18px;
+  color: #333;
+  
+}
+
+.card p {
+  margin-top: 30% !important; /* Add !important as a last resort */
+   display: flex;
+   flex-wrap: wrap;
+  color: #666;
+  margin-top: 0;
+  overflow: hidden;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  /* Tablet view adjustments */
+  .sidebar {
+    width: 40%; /* Sidebar occupies more space on tablets */
+  }
+
+  .content {
+    width: 60%; /* Content shrinks on tablets */
+  }
+
+  .card {
+    flex: 1 1 calc(100% - 20px); /* Cards take full width on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Mobile view adjustments */
+  .layout {
+    flex-direction: column; /* Stack sidebar and content vertically */
+    height: 100vh;
+  }
+
+  .sidebar {
+   display: none;
+  }
+
+  .content {
+    width: 100%; /* Content spans full width */
+   
+  }
+
+  .card {
+    flex: 1 1 100%; /* Cards take full width on mobile */
+    margin-bottom: 10px;
+  }
+
+  .sidebar-item {
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 16px;
+  }
+}

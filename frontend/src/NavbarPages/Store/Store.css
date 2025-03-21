@@ -1,0 +1,124 @@
+.cart-popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 92%;
+  background-color: white;
+  border-left: 2px solid #ccc;
+  padding: 20px;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 5.4%;
+  overflow-y: scroll;
+}
+
+.cart-popup button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+.cart-popup button:hover {
+  background-color: #45a049;
+}
+
+.cart-popup h1 {
+  margin-top: 0;
+}
+
+.cart-popup ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-popup .cart-item {
+  margin-bottom: 20px;
+}
+
+.cart-popup .total-price {
+  font-size: 20px;
+  font-weight: bold;
+}
+.view-cart-btn {
+  position: fixed;
+  top: 5px; /* Adjust as needed */
+  right: 60px; /* Adjust as needed */
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10000; /* Ensure it's above other content */
+}
+
+.view-cart-btn:hover {
+  background-color: #45a049;
+}
+.store-container {
+  padding: 20px;
+}
+
+.store-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  max-width: 250px;
+  text-align: center;
+}
+
+.add-to-cart-btn,
+.view-cart-btn,
+.checkout-btn,
+.remove-btn {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-item {
+    flex: 1 1 calc(50% - 20px); /* 2 items per row for tablets */
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .product-item {
+    flex: 1 1 100%; /* 1 item per row for small screens */
+    max-width: 100%;
+  }
+
+  .store-heading {
+    font-size: 1.8rem; /* Slightly smaller heading for small screens */
+  }
+
+  .product-item img {
+    height: 150px; 
+  }
+}

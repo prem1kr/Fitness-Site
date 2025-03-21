@@ -1,0 +1,54 @@
+.referals-page {
+    background: linear-gradient(120deg, #ffeb3b, #ff9800);
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    animation: fadeInDown 1.5s ease-out;
+  }
+  
+  .referals-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .referals-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .refer-button {
+    background: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+    transition: background 0.3s;
+  }
+  
+  .refer-button:hover {
+    background: #d84315;
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  

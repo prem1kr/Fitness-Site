@@ -1,0 +1,103 @@
+.Main{
+  padding: 2rem;
+  display: flex;
+ justify-self: center;
+ justify-items: center;
+ align-items: center;
+ text-align: center;
+ width: 100%;
+
+}
+
+.video-section {
+  padding: 2rem;
+   max-width: 100%;
+  }
+
+  
+  .thumbnail {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 50px;
+  }
+  
+  .video-gallery {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    scrollbar-width: none; /* For Firefox */
+  }
+  
+  .video-list {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    scrollbar-width: none; /* For Firefox */
+  }
+  
+  /* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+  .video-list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .video-item {
+    min-width: 300px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    position: relative;
+  }
+  
+  .video-item video {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block; /* Make sure the video element behaves like an inline-block element */
+    transition: opacity 0.2s ease-in-out; /* Transition to make video fade in */
+    opacity: 0; /* Initially hide videos */
+  }
+  
+  .video-item.active video {
+    opacity: 1; /* Only show the video when it’s active */
+  }
+  
+
+  
+  .video-caption {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(71, 71, 71, 0.8);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+  }
+  
+  .scroll-button.left {
+    left: 10px;
+    width: auto;
+  }
+  
+  .scroll-button.right {
+    right: 10px;
+    width: auto;
+  }
+  
+  .scroll-button:hover {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  
